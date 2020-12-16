@@ -13,6 +13,17 @@ public class Sketch extends PApplet {
      */
 
     Ball b1;
+    Ball b2;
+    Ball b3;
+    Ball b4;
+    Bubble bl1;
+    Bubble bl2;
+    Bubble bl3;
+    Bubble bl4;
+    Snowflake s1;
+    Snowflake s2;
+    Snowflake s3;
+    Snowflake s4;
 
     public void settings() {
         size(500, 500);
@@ -28,6 +39,17 @@ public class Sketch extends PApplet {
     public void setup() {
         frameRate(30);
         b1 = new Ball(this);
+        b2 = new Ball(this);
+        b3 = new Ball(this);
+        b4 = new Ball(this, 244, 150, 25, color(221, 102, 15), 20, 15);
+        bl1 = new Bubble(this);
+        bl2 = new Bubble(this);
+        bl3 = new Bubble(this, 240, 70, -8, -12, 85, color(140, 10, 233));
+        bl4 = new Bubble(this);
+        s1 = new Snowflake(this, 12, 30, 30, 130, 232, color(78, 241, 10));
+        s2 = new Snowflake(this);
+        s3 = new Snowflake(this);
+        s4 = new Snowflake(this);
     }
 
     public void draw() {
@@ -36,6 +58,28 @@ public class Sketch extends PApplet {
         /* SUMMATIVE REQUIRED Draw and move all balls, snowflakes, and bubbles */
         b1.drawBall();
         b1.moveBall();
+        b2.drawBall();
+        b2.moveBall();
+        b3.drawBall();
+        b3.moveBall();
+        b4.drawBall();
+        b4.moveBall();
+        bl1.moveBubble();
+        bl1.drawBubble();
+        bl2.moveBubble();
+        bl2.drawBubble();
+        bl3.moveBubble();
+        bl3.drawBubble();
+        bl4.moveBubble();
+        bl4.drawBubble();
+        s1.moveSnowflake();
+        s1.drawSnowflake();
+        s2.moveSnowflake();
+        s2.drawSnowflake();
+        s3.moveSnowflake();
+        s3.drawSnowflake();
+        s4.moveSnowflake();
+        s4.drawSnowflake();
     }
 
     /**
